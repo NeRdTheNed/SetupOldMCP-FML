@@ -31,7 +31,7 @@ Here's a table of older JDK download locations:
 
 ## Why?
 
-Older versions of MCP and Forge take many steps to set up, and sometimes require fixes due to their age. Using a shell script is hopefully easier than patching files manually.
+Older versions of MCP and Forge take many steps to set up, and sometimes require fixes due to their age. I wrote a guide on [how to install Forge 1.2.5 manually](https://gist.github.com/NeRdTheNed/37b84c7a96a0b24fbc1ca76613f5bae6) some years ago, which was fairly tedious. Using a shell script is hopefully easier than patching files manually.
 
 ## License
 
