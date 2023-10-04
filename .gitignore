@@ -1,0 +1,8 @@
+# macOS junk files
+.DS_Store
+
+# Downloads
+downloads/
+
+# MCP environment
+mcp62/
