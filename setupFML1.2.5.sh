@@ -17,6 +17,8 @@
 
 # End preamble, begin script.
 
+echo "FML 1.2.5 installation script."
+
 # Detect current OS
 unameOut="$(uname -s)"
 case "${unameOut}" in
@@ -62,6 +64,8 @@ fi
 
 # Delete existing MCP files
 rm -rf ./mcp62/
+
+echo "Downloading required files..."
 
 # Downloads
 mkdir -p downloads
@@ -134,6 +138,8 @@ if [ ! -f "./downloads/resources/1.2.5.zip" ]; then
   curl -L -o ./downloads/resources/1.2.5.zip https://github.com/ahnewark/MineOnline/blob/main/resources/1.2.5.zip?raw=true
 fi
 
+echo "Downloads complete. Extracting files..."
+
 # Extract fernflower
 if [ ! -f "./downloads/fernflower.jar" ]; then
   mcp70aTempDir=$(mktemp -d 2>/dev/null || mktemp -d -t 'mcp70aTempDir')
@@ -169,6 +175,8 @@ if [ ! -f "./downloads/lwjgl-$lwjglBuild/lwjgl.jar" ] || [ ! -f "./downloads/lwj
 fi
 
 # MCP environment
+
+echo "Finished extracting files. Creating MCP setup environment..."
 
 # Unzip MCP
 unzip -q ./downloads/mcp62.zip -d ./mcp62
@@ -209,6 +217,8 @@ fi
 
 # Make install script executable
 chmod +x ./mcp62/forge/install.sh
+
+echo "Finished creating MCP setup environment. Setting up Forge 1.2.5..."
 
 # Install Forge
 cd ./mcp62/forge/ || exit 1
