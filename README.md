@@ -18,6 +18,17 @@ export JAVA_HOME=/path/to/java/home
 
 On Windows, there's a few complications. Old MCP versions will check the registry key `Software\JavaSoft\Java Development Kit` for the value of `CurrentVersion`, and will use the JDK found under `Software\JavaSoft\Java Development Kit\(value of CurrentVersion)` if it exists. You may have to edit the registry to change this. If there's nothing in the registry, it will then use the version of java from `javac` in `PATH`, and searches various Program Files locations otherwise.
 
+## Old JDK downloads
+
+Here's a table of older JDK download locations:
+
+| Java version    | macOS                                                                                                          | Windows                                                                                                          | Linux                                                                                                           |
+| --------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 1.6, OpenJDK    | N/A                                                                                                            | [Azul Zulu](https://www.azul.com/downloads/?version=java-6-lts&os=windows&package=jdk&show-old-builds=true#zulu) | [Azul Zulu](https://www.azul.com/downloads/?version=java-6-lts&os=linux&package=jdk&show-old-builds=true#zulu)  |
+| 1.6, Oracle JDK | [Apple Legacy JDK](https://support.apple.com/kb/dl1572)                                                        | [Oracle Java 6 Archive](https://www.oracle.com/au/java/technologies/javase-java-archive-javase6-downloads.html)  | [Oracle Java 6 Archive](https://www.oracle.com/au/java/technologies/javase-java-archive-javase6-downloads.html) |
+| 1.7, OpenJDK    | [Azul Zulu](https://www.azul.com/downloads/?version=java-7-lts&os=macos&package=jdk&show-old-builds=true#zulu) | [Azul Zulu](https://www.azul.com/downloads/?version=java-7-lts&os=windows&package=jdk&show-old-builds=true#zulu) | [Azul Zulu](https://www.azul.com/downloads/?version=java-7-lts&os=linux&package=jdk&show-old-builds=true#zulu)  |
+| 1.7, Oracle JDK | [Oracle Java 7 Archive](https://www.oracle.com/au/java/technologies/javase/javase7-archive-downloads.html)     | [Oracle Java 7 Archive](https://www.oracle.com/au/java/technologies/javase/javase7-archive-downloads.html)       | [Oracle Java 7 Archive](https://www.oracle.com/au/java/technologies/javase/javase7-archive-downloads.html)      |
+
 ## Why?
 
 Older versions of MCP and Forge take many steps to set up, and sometimes require fixes due to their age. Using a shell script is hopefully easier than patching files manually.
