@@ -29,7 +29,7 @@ Here's a table of older JDK download locations:
 | 1.7, OpenJDK    | [Azul Zulu](https://www.azul.com/downloads/?version=java-7-lts&os=macos&package=jdk&show-old-builds=true#zulu) | [Azul Zulu](https://www.azul.com/downloads/?version=java-7-lts&os=windows&package=jdk&show-old-builds=true#zulu) | [Azul Zulu](https://www.azul.com/downloads/?version=java-7-lts&os=linux&package=jdk&show-old-builds=true#zulu)  |
 | 1.7, Oracle JDK | [Oracle Java 7 Archive](https://www.oracle.com/au/java/technologies/javase/javase7-archive-downloads.html)     | [Oracle Java 7 Archive](https://www.oracle.com/au/java/technologies/javase/javase7-archive-downloads.html)       | [Oracle Java 7 Archive](https://www.oracle.com/au/java/technologies/javase/javase7-archive-downloads.html)      |
 
-Note for macOS users: the Apple Legacy JDK contains 32 bit components, and may not work on macOS 10.15+.
+Note for macOS users: the Apple Legacy JDK contains 32 bit components, and may not work on macOS 10.15+. It's generally easier to use Java 7 instead of Java 6 on macOS.
 
 ## Why?
 
