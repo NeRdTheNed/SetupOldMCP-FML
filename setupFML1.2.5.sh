@@ -214,3 +214,5 @@ chmod +x ./mcp62/forge/install.sh
 cd ./mcp62/forge/ || exit 1
 ./install.sh
 cd ../..
+
+echo "Forge 1.2.5 setup complete! Now it is YOURFORGE!"
