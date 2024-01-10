@@ -10,11 +10,13 @@ Scripts:
 
 ## Using specific JDK versions
 
-On Linux or macOS, setting the version of Java used is generally very simple:
+On Linux or macOS, setting the version of Java used is generally very simple. Suppose your JDK tarball (Azul or Oracle) was extracted to `~/zulu-jdk-7.56.0.11`. Then, in order to set all references in the current terminal session to said JDK version, you must update your `PATH`. That can be done in the following manner:
 
 ```shell
-export JAVA_HOME=/path/to/java/home
+export JAVA_HOME="~/zulu-jdk-7.56.0.11"
+export PATH="$JAVA_HOME/bin:$PATH" # take note of the '/bin'
 ```
+Note that your original `PATH` will remain unaffected in any other terminal window. Another alternative would be to `source` a shell script with the above, as to simplify the process in case you need to use many terminal sessions. If you wish to set your system-wide Java version to this, add the above lines to the end of your `~/.profile` and reboot. Uncomment or remove these rows to revert to how it was. `update-alternatives` to `javac` may also be used in Debian-based systems. 
 
 On Windows, there's a few complications. Old MCP versions will check the registry key `Software\JavaSoft\Java Development Kit` for the value of `CurrentVersion`, and will use the JDK found under `Software\JavaSoft\Java Development Kit\(value of CurrentVersion)` if it exists. You may have to edit the registry to change this. If there's nothing in the registry, it will then use the version of java from `javac` in `PATH`, and searches various Program Files locations otherwise.
 
