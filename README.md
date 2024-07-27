@@ -10,7 +10,13 @@ Scripts:
 
 ## Using specific JDK versions
 
-On Linux or macOS, setting the version of Java used is generally very simple. Suppose your JDK tarball (Azul or Oracle) was extracted to `~/zulu-jdk-7.56.0.11`. Then, in order to set all references in the current terminal session to said JDK version, you must update your `PATH`. That can be done in the following manner:
+On macOS, setting the version of Java used is generally very simple:
+
+```shell
+export JAVA_HOME=/path/to/java/home
+```
+
+On Linux, setting the version of Java used has a few more steps. Suppose your JDK tarball (Azul or Oracle) was extracted to `~/zulu-jdk-7.56.0.11`. Then, in order to set all references in the current terminal session to said JDK version, you must update your `PATH`. That can be done in the following manner:
 
 ```shell
 export JAVA_HOME="~/zulu-jdk-7.56.0.11"
